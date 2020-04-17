@@ -1,0 +1,8 @@
+v 4
+file . "design.vhd" "405f0d161e8ed0f59a3fabb0bb892becfcf11ee3" "20200417002500.821":
+  entity and_3_in at 2( 25) + 0 on 11;
+  architecture compuerta of and_3_in at 12( 173) + 0 on 12;
+file . "testbench.vhd" "47fcbb3d91a9a99d1f1f886a269e728d70812fd9" "20200417002500.821":
+  entity tb_and_3_in at 5( 119) + 0 on 13;
+  architecture tb of tb_and_3_in at 11( 203) + 0 on 14;
+  configuration cfg_tb_and_3_in at 70( 1770) + 0 on 15;

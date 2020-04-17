@@ -1,0 +1,11 @@
+v 4
+file . "testbench.vhd" "990cccef77b19f437e1f7ea1e919c14c59b953fb" "20200417004037.261":
+  entity tb_compuerta_xor at 5( 118) + 0 on 4;
+  architecture tb of tb_compuerta_xor at 11( 212) + 0 on 4;
+  configuration cfg_tb_compuerta_xor at 41( 883) + 0 on 4;
+file . "design.vhd" "47085000b48ff273704c62848d81c898c39b54e1" "20200417004037.261":
+  entity compuerta_xor at 2( 25) + 0 on 4;
+  architecture rtl of compuerta_xor at 16( 269) + 0 on 4;
+file . "compuerta.vhd" "4d02f1cdb7b413051afe2e67e61ae5452cd87426" "20200417004037.261":
+  entity compuerta at 2( 26) + 0 on 4;
+  architecture rtl of compuerta at 13( 188) + 0 on 4;

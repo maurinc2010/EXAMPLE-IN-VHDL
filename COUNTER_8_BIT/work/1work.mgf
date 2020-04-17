@@ -1,0 +1,83 @@
+V 000044 55 991           1587083307937 rtl
+(_unit VHDL(contador 0 6(rtl 0 13))
+	(_version vdb)
+	(_time 1587083307938 2020.04.17 00:28:27)
+	(_source(\./../design.vhd\))
+	(_parameters tan)
+	(_code 34643031666335233163256e613262333632373262)
+	(_ent
+		(_time 1587083307935)
+	)
+	(_object
+		(_port(_int clk -1 0 8(_ent(_in)(_event))))
+		(_port(_int reset -1 0 8(_ent(_in))))
+		(_type(_int ~STD_LOGIC_VECTOR{7~downto~0}~12 0 9(_array -1((_dto i 7 i 0)))))
+		(_port(_int cuenta 0 0 9(_ent(_out))))
+		(_type(_int ~UNSIGNED{7~downto~0}~13 0 18(_array -1((_dto i 7 i 0)))))
+		(_var(_int cnt 1 0 18(_prcs 0)))
+		(_prcs
+			(cunta(_arch 0 0 16(_prcs(_simple)(_trgt(2))(_sens(0)(1)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+		(_type(_ext ~extieee.std_logic_1164.STD_ULOGIC(0 STD_ULOGIC)))
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC_VECTOR(0 STD_LOGIC_VECTOR)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard))(ieee(NUMERIC_STD)))
+	(_static
+		(33686018 33686018)
+	)
+	(_model . rtl 1 -1)
+)
+V 000043 55 1077          1587083307950 tb
+(_unit VHDL(tb_contador 0 8(tb 0 11))
+	(_version vdb)
+	(_time 1587083307951 2020.04.17 00:28:27)
+	(_source(\./../testbench.vhd\))
+	(_parameters tan)
+	(_code 3e6f3d3b696a3c283f3c78643a393a383f383a3868)
+	(_ent
+		(_time 1587083307947)
+	)
+	(_comp
+		(contador
+			(_object
+				(_port(_int clk -1 0 14(_ent (_in))))
+				(_port(_int reset -1 0 15(_ent (_in))))
+				(_port(_int cuenta 0 0 16(_ent (_out))))
+			)
+		)
+	)
+	(_inst dut 0 25(_comp contador)
+		(_port
+			((clk)(clk))
+			((reset)(reset))
+			((cuenta)(cuenta))
+		)
+		(_use(_ent . contador)
+		)
+	)
+	(_object
+		(_type(_int ~STD_LOGIC_VECTOR{7~downto~0}~13 0 16(_array -1((_dto i 7 i 0)))))
+		(_sig(_int clk -1 0 19(_arch(_uni))))
+		(_sig(_int reset -1 0 20(_arch(_uni))))
+		(_type(_int ~STD_LOGIC_VECTOR{7~downto~0}~132 0 21(_array -1((_dto i 7 i 0)))))
+		(_sig(_int cuenta 1 0 21(_arch(_uni))))
+		(_prcs
+			(stimuli(_arch 0 0 30(_prcs(_trgt(0)(1)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_model . tb 1 -1)
+)
+V 000034 55 292 0 cfg_tb_contador
+(_configuration VHDL (cfg_tb_contador 0 45 (tb_contador))
+	(_version vdb)
+	(_time 1587083307954 2020.04.17 00:28:27)
+	(_source(\./../testbench.vhd\))
+	(_parameters tan)
+	(_code 3e6e3a3b6d696d2b683d2a646d3b68383d3868386b)
+	(_arch tb
+	)
+	(_use(std(standard))(ieee(std_logic_1164)))
+)

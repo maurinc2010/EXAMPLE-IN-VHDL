@@ -1,0 +1,11 @@
+v 4
+file . "full_adder.vhd" "033afbdd0bef4b41db7db3004afec804ef40c83e" "20200417002524.507":
+  entity fa at 1( 0) + 0 on 16;
+  architecture rtl of fa at 10( 157) + 0 on 17;
+file . "design.vhd" "219bfae89f73f0a8af7ce4cda080b565398e663f" "20200417002524.507":
+  entity sumador_4_bit at 2( 25) + 0 on 11;
+  architecture rtl of sumador_4_bit at 14( 293) + 0 on 12;
+file . "testbench.vhd" "30921d0ea1755225ab3b5e28dfaa5bcb115cab9c" "20200417002524.507":
+  entity tb_sumador_4_bit at 5( 119) + 0 on 13;
+  architecture tb of tb_sumador_4_bit at 11( 213) + 0 on 14;
+  configuration cfg_tb_sumador_4_bit at 54( 1243) + 0 on 15;
