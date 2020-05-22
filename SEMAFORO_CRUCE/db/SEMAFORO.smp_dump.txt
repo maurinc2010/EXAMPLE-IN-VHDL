@@ -1,0 +1,8 @@
+
+State Machine - |SEMAFORO|estado_presente
+Name estado_presente.espera estado_presente.camiamarillo estado_presente.camiverde estado_presente.carramarillo estado_presente.inicial 
+estado_presente.inicial 0 0 0 0 0 
+estado_presente.carramarillo 0 0 0 1 1 
+estado_presente.camiverde 0 0 1 0 1 
+estado_presente.camiamarillo 0 1 0 0 1 
+estado_presente.espera 1 0 0 0 1 

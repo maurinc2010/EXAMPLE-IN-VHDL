@@ -1,0 +1,555 @@
+# do TECLADO.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module TECLADO
+# 
+# Top level modules:
+# 	TECLADO
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module TECLADO_vlg_sample_tst
+# -- Compiling module TECLADO_vlg_check_tst
+# -- Compiling module TECLADO_vlg_vec_tst
+# 
+# Top level modules:
+# 	TECLADO_vlg_vec_tst
+# vsim -L max3000a_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.TECLADO_vlg_vec_tst 
+# Loading work.TECLADO_vlg_vec_tst
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.TECLADO
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(98): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(124): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(149): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(174): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(199): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(224): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(249): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(274): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(299): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(326): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(353): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(378): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(403): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(415): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(428): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(441): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(454): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(482): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(510): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(537): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(562): Instantiation of 'max_mcell' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(574): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(587): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(600): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(613): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(626): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(639): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(652): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(665): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(678): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(691): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(704): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(717): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(730): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error: (vsim-3033) TECLADO.vo(743): Instantiation of 'max_io' failed. The design unit was not found.
+# 
+#         Region: /TECLADO_vlg_vec_tst/i1
+#         Searched libraries:
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/altera_mf
+#             c:/altera/13.0sp2/modelsim_ase/altera/verilog/220model
+#             c:/altera/13.0sp2/modelsim_ase/altera/vhdl/sgate
+#             C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/simulation/qsim/work
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.TECLADO_vlg_sample_tst
+# ** Error: (vsim-19) Failed to access library 'max3000a_ver' at "max3000a_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# Loading work.TECLADO_vlg_check_tst
+# Error loading design

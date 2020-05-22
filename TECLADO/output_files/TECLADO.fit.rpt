@@ -1,0 +1,557 @@
+Fitter report for TECLADO
+Sat May 09 08:10:47 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Pin-Out File
+  6. Fitter Resource Usage Summary
+  7. Input Pins
+  8. Output Pins
+  9. All Package Pins
+ 10. I/O Standard
+ 11. Dedicated Inputs I/O
+ 12. Output Pin Default Load For Reported TCO
+ 13. Fitter Resource Utilization by Entity
+ 14. Control Signals
+ 15. Global & Other Fast Signals
+ 16. Non-Global High Fan-Out Signals
+ 17. Other Routing Usage Summary
+ 18. LAB External Interconnect
+ 19. LAB Macrocells
+ 20. Logic Cell Interconnection
+ 21. Fitter Device Options
+ 22. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Fitter Summary                                                              ;
++---------------------------+-------------------------------------------------+
+; Fitter Status             ; Successful - Sat May 09 08:10:47 2020           ;
+; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name             ; TECLADO                                         ;
+; Top-level Entity Name     ; TECLADO                                         ;
+; Family                    ; MAX3000A                                        ;
+; Device                    ; EPM3512AQI208-10                                ;
+; Timing Models             ; Final                                           ;
+; Total macrocells          ; 16 / 512 ( 3 % )                                ;
+; Total pins                ; 23 / 172 ( 13 % )                               ;
++---------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                               ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Option                                                                     ; Setting          ; Default Value ;
++----------------------------------------------------------------------------+------------------+---------------+
+; Device                                                                     ; EPM3512AQI208-10 ;               ;
+; Use smart compilation                                                      ; Off              ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On               ; On            ;
+; Enable compact report table                                                ; Off              ; Off           ;
+; Optimize Multi-Corner Timing                                               ; Off              ; Off           ;
+; Optimize Timing for ECOs                                                   ; Off              ; Off           ;
+; Regenerate full fit report during ECO compiles                             ; Off              ; Off           ;
+; Optimize IOC Register Placement for Timing                                 ; Normal           ; Normal        ;
+; Fitter Initial Placement Seed                                              ; 1                ; 1             ;
+; Slow Slew Rate                                                             ; Off              ; Off           ;
+; Fitter Effort                                                              ; Auto Fit         ; Auto Fit      ;
+; Force Fitter to Avoid Periphery Placement Warnings                         ; Off              ; Off           ;
++----------------------------------------------------------------------------+------------------+---------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/DECI/Documents/example vhdl/EXAMPLE-IN-VHDL/TECLADO/output_files/TECLADO.pin.
+
+
++--------------------------------------------------+
+; Fitter Resource Usage Summary                    ;
++------------------------------+-------------------+
+; Resource                     ; Usage             ;
++------------------------------+-------------------+
+; Logic cells                  ; 16 / 512 ( 3 % )  ;
+; Registers                    ; 2 / 512 ( < 1 % ) ;
+; Number of pterms used        ; 22                ;
+; I/O pins                     ; 23 / 172 ( 13 % ) ;
+;     -- Clock pins            ; 1 / 2 ( 50 % )    ;
+;     -- Dedicated input pins  ; 0 / 2 ( 0 % )     ;
+;                              ;                   ;
+; Global signals               ; 1                 ;
+; Shareable expanders          ; 0 / 512 ( 0 % )   ;
+; Parallel expanders           ; 0 / 480 ( 0 % )   ;
+; Cells using turbo bit        ; 16 / 512 ( 3 % )  ;
+; Maximum fan-out              ; 8                 ;
+; Highest non-global fan-out   ; 8                 ;
+; Total fan-out                ; 47                ;
+; Average fan-out              ; 1.21              ;
++------------------------------+-------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                    ;
++----------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; Name     ; Pin # ; I/O Bank ; LAB ; Combinational Fan-Out ; Registered Fan-Out ; Global ; I/O Standard ; Location assigned by ;
++----------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+; clk_250m ; 184   ; --       ; --  ; 2                     ; 0                  ; yes    ; 3.3-V LVTTL  ; Fitter               ;
+; inp[0]   ; 36    ; --       ; 22  ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; inp[1]   ; 64    ; --       ; 18  ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; inp[2]   ; 121   ; --       ; 11  ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
+; inp[3]   ; 49    ; --       ; 20  ; 4                     ; 0                  ; no     ; 3.3-V LVTTL  ; Fitter               ;
++----------+-------+----------+-----+-----------------------+--------------------+--------+--------------+----------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                     ;
++-------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; Name        ; Pin # ; I/O Bank ; LAB ; Output Register ; Slow Slew Rate ; Open Drain ; TRI Primitive ; I/O Standard ; Location assigned by ; Load  ; Output Enable Source ; Output Enable Group ;
++-------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+; data[0]     ; 172   ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; data[1]     ; 163   ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; data[2]     ; 164   ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; data[3]     ; 166   ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; data[4]     ; 167   ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; data[5]     ; 168   ; --       ; 3   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; data[6]     ; 159   ; --       ; 4   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; new_data[0] ; 178   ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; new_data[1] ; 173   ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; new_data[2] ; 177   ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; new_data[3] ; 175   ; --       ; 1   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; outp[0]     ; 171   ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; outp[1]     ; 169   ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
+; outp[2]     ; 170   ; --       ; 2   ; no              ; no             ; no         ; no            ; 3.3-V LVTTL  ; Fitter               ; 10 pF ; -                    ; -                   ;
++-------------+-------+----------+-----+-----------------+----------------+------------+---------------+--------------+----------------------+-------+----------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; All Package Pins                                                                                      ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; Location ; Pad Number ; I/O Bank ; Pin Name/Usage ; Dir.   ; I/O Standard ; Voltage ; User Assignment ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+; 1        ; 181        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 2        ; 180        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 3        ; 179        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 4        ; 178        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 5        ; 177        ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 6        ; 176        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 7        ; 175        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 8        ; 174        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 9        ; 173        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 10       ; 172        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 11       ; 171        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 12       ; 170        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 13       ; 169        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 14       ; 168        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 15       ; 167        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 16       ; 166        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 17       ; 165        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 18       ; 164        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 19       ; 163        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 20       ; 162        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 21       ; 161        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 22       ; 160        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 23       ; 159        ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 24       ; 158        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 25       ; 157        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 26       ; 156        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 27       ; 155        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 28       ; 154        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 29       ; 153        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 30       ; 152        ; --       ; TCK            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 31       ; 151        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 32       ; 150        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 33       ; 149        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 34       ; 148        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 35       ; 147        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 36       ; 146        ; --       ; inp[0]         ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 37       ; 145        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 38       ; 144        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 39       ; 143        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 40       ; 142        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 41       ; 141        ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 42       ; 140        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 43       ; 139        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 44       ; 138        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 45       ; 137        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 46       ; 136        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 47       ; 135        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 48       ; 134        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 49       ; 133        ; --       ; inp[3]         ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 50       ; 132        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 51       ; 131        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 52       ; 130        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 53       ; 129        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 54       ; 128        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 55       ; 127        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 56       ; 126        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 57       ; 125        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 58       ; 124        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 59       ; 123        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 60       ; 122        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 61       ; 121        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 62       ; 120        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 63       ; 119        ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 64       ; 118        ; --       ; inp[1]         ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 65       ; 117        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 66       ; 116        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 67       ; 115        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 68       ; 114        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 69       ; 113        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 70       ; 112        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 71       ; 111        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 72       ; 110        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 73       ; 109        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 74       ; 108        ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 75       ; 107        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 76       ; 106        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 77       ; 105        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 78       ; 104        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 79       ; 103        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 80       ; 102        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 81       ; 101        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 82       ; 100        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 83       ; 99         ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 84       ; 98         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 85       ; 97         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 86       ; 96         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 87       ; 95         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 88       ; 94         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 89       ; 93         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 90       ; 92         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 91       ; 91         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 92       ; 90         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 93       ; 89         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 94       ; 88         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 95       ; 87         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 96       ; 86         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 97       ; 85         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 98       ; 84         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 99       ; 83         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 100      ; 82         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 101      ; 81         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 102      ; 80         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 103      ; 79         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 104      ; 78         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 105      ; 77         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 106      ; 76         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 107      ; 75         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 108      ; 74         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 109      ; 73         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 110      ; 72         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 111      ; 71         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 112      ; 70         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 113      ; 69         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 114      ; 68         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 115      ; 67         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 116      ; 66         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 117      ; 65         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 118      ; 64         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 119      ; 63         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 120      ; 62         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 121      ; 61         ; --       ; inp[2]         ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 122      ; 60         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 123      ; 59         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 124      ; 58         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 125      ; 57         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 126      ; 56         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 127      ; 55         ; --       ; TMS            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 128      ; 54         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 129      ; 53         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 130      ; 52         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 131      ; 51         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 132      ; 50         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 133      ; 49         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 134      ; 48         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 135      ; 47         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 136      ; 46         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 137      ; 45         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 138      ; 44         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 139      ; 43         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 140      ; 42         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 141      ; 41         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 142      ; 40         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 143      ; 39         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 144      ; 38         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 145      ; 37         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 146      ; 36         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 147      ; 35         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 148      ; 34         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 149      ; 33         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 150      ; 32         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 151      ; 31         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 152      ; 30         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 153      ; 29         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 154      ; 28         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 155      ; 27         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 156      ; 26         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 157      ; 25         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 158      ; 24         ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 159      ; 23         ; --       ; data[6]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 160      ; 22         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 161      ; 21         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 162      ; 20         ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 163      ; 19         ; --       ; data[1]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 164      ; 18         ; --       ; data[2]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 165      ; 17         ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 166      ; 16         ; --       ; data[3]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 167      ; 15         ; --       ; data[4]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 168      ; 14         ; --       ; data[5]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 169      ; 13         ; --       ; outp[1]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 170      ; 12         ; --       ; outp[2]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 171      ; 11         ; --       ; outp[0]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 172      ; 10         ; --       ; data[0]        ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 173      ; 9          ; --       ; new_data[1]    ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 174      ; 8          ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 175      ; 7          ; --       ; new_data[3]    ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 176      ; 6          ; --       ; TDI            ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 177      ; 5          ; --       ; new_data[2]    ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 178      ; 4          ; --       ; new_data[0]    ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 179      ; 3          ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 180      ; 2          ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 181      ; 1          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 182      ; 0          ; --       ; GND+           ;        ;              ;         ;                 ;
+; 183      ; 207        ; --       ; GND+           ;        ;              ;         ;                 ;
+; 184      ; 206        ; --       ; clk_250m       ; input  ; 3.3-V LVTTL  ;         ; N               ;
+; 185      ; 205        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 186      ; 204        ; --       ; VCCINT         ; power  ;              ; 3.3V    ;                 ;
+; 187      ; 203        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 188      ; 202        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 189      ; 201        ; --       ; TDO            ; output ; 3.3-V LVTTL  ;         ; N               ;
+; 190      ; 200        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 191      ; 199        ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 192      ; 198        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 193      ; 197        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 194      ; 196        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 195      ; 195        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 196      ; 194        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 197      ; 193        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 198      ; 192        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 199      ; 191        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 200      ; 190        ; --       ; GND            ; gnd    ;              ;         ;                 ;
+; 201      ; 189        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 202      ; 188        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 203      ; 187        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 204      ; 186        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 205      ; 185        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 206      ; 184        ; --       ; RESERVED       ;        ;              ;         ;                 ;
+; 207      ; 183        ; --       ; VCCIO          ; power  ;              ; 3.3V    ;                 ;
+; 208      ; 182        ; --       ; RESERVED       ;        ;              ;         ;                 ;
++----------+------------+----------+----------------+--------+--------------+---------+-----------------+
+Note: Pin directions (input, output or bidir) are based on device operating in user mode.
+
+
++--------------------------------------------------------------------------------------------------+
+; I/O Standard                                                                                     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; I/O Standard ; Input Vref ; Dedicated Input Pins ; Pins in I/O Bank1 ; Pins in I/O Bank2 ; Total ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+; 3.3-V LVTTL  ; -          ; 1                    ; 0                 ; 0                 ; 1     ;
++--------------+------------+----------------------+-------------------+-------------------+-------+
+
+
++------------------------------------------------------------------------+
+; Dedicated Inputs I/O                                                   ;
++----------+-------+-------+-------+--------------+------------+---------+
+; Name     ; Pin # ; Type  ; VCCIO ; I/O Standard ; Input Vref ; Current ;
++----------+-------+-------+-------+--------------+------------+---------+
+; clk_250m ; 184   ; Input ; --    ; 3.3-V LVTTL  ; -          ; 0 mA    ;
++----------+-------+-------+-------+--------------+------------+---------+
+
+
++-----------------------------------------------+
+; Output Pin Default Load For Reported TCO      ;
++--------------+-------+------------------------+
+; I/O Standard ; Load  ; Termination Resistance ;
++--------------+-------+------------------------+
+; 3.3-V LVTTL  ; 10 pF ; Not Available          ;
+; 3.3-V LVCMOS ; 10 pF ; Not Available          ;
+; 3.3-V PCI    ; 10 pF ; 25 Ohm (Parallel)      ;
+; 2.5 V        ; 10 pF ; Not Available          ;
++--------------+-------+------------------------+
+Note: User assignments will override these defaults. The user specified values are listed in the Output Pins and Bidir Pins tables.
+
+
++-------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                               ;
++----------------------------+------------+------+---------------------+--------------+
+; Compilation Hierarchy Node ; Macrocells ; Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+------------+------+---------------------+--------------+
+; |TECLADO                   ; 16         ; 23   ; |TECLADO            ; work         ;
++----------------------------+------------+------+---------------------+--------------+
+
+
++------------------------------------------------------------------------------------------+
+; Control Signals                                                                          ;
++----------+----------+---------+-------+--------+----------------------+------------------+
+; Name     ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ;
++----------+----------+---------+-------+--------+----------------------+------------------+
+; clk_250m ; PIN_184  ; 2       ; Clock ; yes    ; On                   ; --               ;
++----------+----------+---------+-------+--------+----------------------+------------------+
+
+
++-------------------------------------------------------------------------+
+; Global & Other Fast Signals                                             ;
++----------+----------+---------+----------------------+------------------+
+; Name     ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ;
++----------+----------+---------+----------------------+------------------+
+; clk_250m ; PIN_184  ; 2       ; On                   ; --               ;
++----------+----------+---------+----------------------+------------------+
+
+
++-----------------------------------------+
+; Non-Global High Fan-Out Signals         ;
++-------------------------------+---------+
+; Name                          ; Fan-Out ;
++-------------------------------+---------+
+; estado_presente.state_bit_0   ; 8       ;
+; estado_presente.state_bit_1   ; 7       ;
+; inp[3]                        ; 4       ;
+; inp[2]                        ; 4       ;
+; inp[1]                        ; 4       ;
+; inp[0]                        ; 4       ;
+; ~GND~6                        ; 1       ;
+; ~GND~5                        ; 1       ;
+; ~GND~4                        ; 1       ;
+; ~GND~3                        ; 1       ;
+; ~GND~2                        ; 1       ;
+; ~GND~1                        ; 1       ;
+; ~GND~0                        ; 1       ;
+; new_data~56                   ; 1       ;
+; new_data~50                   ; 1       ;
+; new_data~44                   ; 1       ;
+; new_data~40                   ; 1       ;
+; estado_presente.state_bit_1~1 ; 1       ;
+; estado_presente.COLUMNA1~6    ; 1       ;
+; estado_presente.state_bit_0~3 ; 1       ;
++-------------------------------+---------+
+
+
++---------------------------------------------------+
+; Other Routing Usage Summary                       ;
++-----------------------------+---------------------+
+; Other Routing Resource Type ; Usage               ;
++-----------------------------+---------------------+
+; Output enables              ; 0 / 10 ( 0 % )      ;
+; PIA buffers                 ; 8 / 1,152 ( < 1 % ) ;
+; PIAs                        ; 8 / 1,152 ( < 1 % ) ;
++-----------------------------+---------------------+
+
+
++----------------------------------------------------------------------------+
+; LAB External Interconnect                                                  ;
++----------------------------------------------+-----------------------------+
+; LAB External Interconnects  (Average = 0.25) ; Number of LABs  (Total = 2) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 30                          ;
+; 1                                            ; 0                           ;
+; 2                                            ; 1                           ;
+; 3                                            ; 0                           ;
+; 4                                            ; 0                           ;
+; 5                                            ; 0                           ;
+; 6                                            ; 1                           ;
++----------------------------------------------+-----------------------------+
+
+
++----------------------------------------------------------------------+
+; LAB Macrocells                                                       ;
++----------------------------------------+-----------------------------+
+; Number of Macrocells  (Average = 0.50) ; Number of LABs  (Total = 4) ;
++----------------------------------------+-----------------------------+
+; 0                                      ; 28                          ;
+; 1                                      ; 1                           ;
+; 2                                      ; 0                           ;
+; 3                                      ; 0                           ;
+; 4                                      ; 1                           ;
+; 5                                      ; 1                           ;
+; 6                                      ; 1                           ;
++----------------------------------------+-----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Logic Cell Interconnection                                                                                                                                                                                                                                                            ;
++-----+------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; LAB ; Logic Cell ; Input                                                                                    ; Output                                                                                                                                                                  ;
++-----+------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+;  A  ; LC2        ; clk_250m, estado_presente.state_bit_0, estado_presente.state_bit_1                       ; estado_presente.state_bit_0, estado_presente.state_bit_1, estado_presente.state_bit_0~3, estado_presente.COLUMNA1~6, new_data~40, new_data~44, new_data~50, new_data~56 ;
+;  A  ; LC3        ; clk_250m, estado_presente.state_bit_0                                                    ; estado_presente.state_bit_0, estado_presente.COLUMNA1~6, estado_presente.state_bit_1~1, new_data~40, new_data~44, new_data~50, new_data~56                              ;
+;  A  ; LC1        ; inp[1], inp[2], inp[3], inp[0], estado_presente.state_bit_0, estado_presente.state_bit_1 ; new_data[1]                                                                                                                                                             ;
+;  A  ; LC9        ; estado_presente.state_bit_0, estado_presente.state_bit_1, inp[0], inp[1], inp[2], inp[3] ; new_data[3]                                                                                                                                                             ;
+;  A  ; LC14       ; estado_presente.state_bit_1, inp[1], inp[0], inp[2], inp[3], estado_presente.state_bit_0 ; new_data[2]                                                                                                                                                             ;
+;  A  ; LC16       ; estado_presente.state_bit_0, inp[1], inp[2], inp[3], inp[0], estado_presente.state_bit_1 ; new_data[0]                                                                                                                                                             ;
+;  B  ; LC17       ; estado_presente.state_bit_0                                                              ; outp[1]                                                                                                                                                                 ;
+;  B  ; LC21       ; estado_presente.state_bit_0, estado_presente.state_bit_1                                 ; outp[2]                                                                                                                                                                 ;
+;  B  ; LC25       ; estado_presente.state_bit_1                                                              ; outp[0]                                                                                                                                                                 ;
+;  B  ; LC27       ;                                                                                          ; data[0]                                                                                                                                                                 ;
+;  C  ; LC33       ;                                                                                          ; data[1]                                                                                                                                                                 ;
+;  C  ; LC37       ;                                                                                          ; data[2]                                                                                                                                                                 ;
+;  C  ; LC41       ;                                                                                          ; data[3]                                                                                                                                                                 ;
+;  C  ; LC43       ;                                                                                          ; data[4]                                                                                                                                                                 ;
+;  C  ; LC46       ;                                                                                          ; data[5]                                                                                                                                                                 ;
+;  D  ; LC57       ;                                                                                          ; data[6]                                                                                                                                                                 ;
++-----+------------+------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Fitter Device Options                                         ;
++----------------------------------------------+----------------+
+; Option                                       ; Setting        ;
++----------------------------------------------+----------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off            ;
+; Enable device-wide reset (DEV_CLRn)          ; Off            ;
+; Enable device-wide output enable (DEV_OE)    ; Off            ;
+; Enable INIT_DONE output                      ; Off            ;
+; Configuration scheme                         ; Passive Serial ;
+; Security bit                                 ; Off            ;
+; Base pin-out file on sameframe device        ; Off            ;
++----------------------------------------------+----------------+
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (119006): Selected device EPM3512AQI208-10 for design "TECLADO"
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4698 megabytes
+    Info: Processing ended: Sat May 09 08:10:47 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

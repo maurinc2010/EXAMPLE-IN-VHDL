@@ -1,0 +1,557 @@
+TimeQuest Timing Analyzer report for SEMAFORO
+Fri May 08 19:19:38 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'clk_1s'
+ 12. Setup: 'sensor'
+ 13. Hold: 'sensor'
+ 14. Hold: 'clk_1s'
+ 15. Minimum Pulse Width: 'clk_1s'
+ 16. Minimum Pulse Width: 'sensor'
+ 17. Setup Times
+ 18. Hold Times
+ 19. Clock to Output Times
+ 20. Minimum Clock to Output Times
+ 21. Setup Transfers
+ 22. Hold Transfers
+ 23. Report TCCS
+ 24. Report RSKM
+ 25. Unconstrained Paths
+ 26. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; SEMAFORO                                                          ;
+; Device Family      ; MAX V                                                             ;
+; Device Name        ; 5M40ZM64A5                                                        ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Slow Model                                                        ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                             ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets    ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; clk_1s     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk_1s } ;
+; sensor     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { sensor } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+
+
++-------------------------------------------------+
+; Fmax Summary                                    ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 67.97 MHz ; 67.97 MHz       ; clk_1s     ;      ;
++-----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++----------------------------------+
+; Setup Summary                    ;
++--------+---------+---------------+
+; Clock  ; Slack   ; End Point TNS ;
++--------+---------+---------------+
+; clk_1s ; -21.045 ; -158.398      ;
+; sensor ; -1.651  ; -2.825        ;
++--------+---------+---------------+
+
+
++---------------------------------+
+; Hold Summary                    ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; sensor ; -8.431 ; -39.376       ;
+; clk_1s ; 0.829  ; 0.000         ;
++--------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++---------------------------------+
+; Minimum Pulse Width Summary     ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; clk_1s ; -2.289 ; -2.289        ;
+; sensor ; -2.289 ; -2.289        ;
++--------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk_1s'                                                                                                                             ;
++---------+------------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack   ; From Node                    ; To Node                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++---------+------------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; -21.045 ; reset_cuenta                 ; fin_largo                    ; sensor       ; clk_1s      ; 0.500        ; -13.881    ; 7.343      ;
+; -19.098 ; reset_cuenta                 ; fin_corto                    ; sensor       ; clk_1s      ; 0.500        ; -13.881    ; 5.396      ;
+; -18.014 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[0]     ; sensor       ; clk_1s      ; 0.500        ; -13.881    ; 4.312      ;
+; -18.011 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[2]     ; sensor       ; clk_1s      ; 0.500        ; -13.881    ; 4.309      ;
+; -17.961 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[3]     ; sensor       ; clk_1s      ; 0.500        ; -13.881    ; 4.259      ;
+; -17.960 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[4]     ; sensor       ; clk_1s      ; 0.500        ; -13.881    ; 4.258      ;
+; -14.840 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[1]     ; sensor       ; clk_1s      ; 0.500        ; -13.881    ; 1.138      ;
+; -13.713 ; \cuenta_tiempo:cuenta[1]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 14.392     ;
+; -12.859 ; \cuenta_tiempo:cuenta[0]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 13.538     ;
+; -12.168 ; \cuenta_tiempo:cuenta[1]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 12.847     ;
+; -12.094 ; \cuenta_tiempo:cuenta[2]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 12.773     ;
+; -12.076 ; \cuenta_tiempo:cuenta[3]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 12.755     ;
+; -12.001 ; \cuenta_tiempo:cuenta[1]     ; \cuenta_tiempo:cuenta[3]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 12.680     ;
+; -11.766 ; \cuenta_tiempo:cuenta[1]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 12.445     ;
+; -11.381 ; \cuenta_tiempo:cuenta[3]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 12.060     ;
+; -11.314 ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.993     ;
+; -11.212 ; \cuenta_tiempo:cuenta[4]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.891     ;
+; -11.147 ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[3]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.826     ;
+; -10.912 ; \cuenta_tiempo:cuenta[0]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.591     ;
+; -10.716 ; \cuenta_tiempo:cuenta[3]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.395     ;
+; -10.549 ; \cuenta_tiempo:cuenta[2]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.228     ;
+; -10.548 ; \cuenta_tiempo:cuenta[4]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.227     ;
+; -10.547 ; \cuenta_tiempo:cuenta[4]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.226     ;
+; -10.382 ; \cuenta_tiempo:cuenta[2]     ; \cuenta_tiempo:cuenta[3]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.061     ;
+; -10.364 ; \cuenta_tiempo:cuenta[3]     ; \cuenta_tiempo:cuenta[3]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 11.043     ;
+; -10.147 ; \cuenta_tiempo:cuenta[2]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 10.826     ;
+; -9.550  ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[1]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 10.229     ;
+; -9.300  ; \cuenta_tiempo:cuenta[1]     ; \cuenta_tiempo:cuenta[1]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 9.979      ;
+; -9.165  ; \cuenta_tiempo:cuenta[1]     ; \cuenta_tiempo:cuenta[2]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 9.844      ;
+; -8.710  ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[0]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 9.389      ;
+; -8.311  ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[2]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 8.990      ;
+; -7.585  ; fin_largo                    ; estado_presente.espera       ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 8.264      ;
+; -7.542  ; fin_largo                    ; estado_presente.inicial      ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 8.221      ;
+; -7.460  ; estado_presente.camiverde    ; estado_presente.camiamarillo ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 8.139      ;
+; -6.696  ; \cuenta_tiempo:cuenta[2]     ; \cuenta_tiempo:cuenta[2]     ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 7.375      ;
+; -6.143  ; fin_corto                    ; estado_presente.camiverde    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 6.822      ;
+; -6.139  ; fin_corto                    ; estado_presente.camiamarillo ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 6.818      ;
+; -5.681  ; estado_presente.carramarillo ; estado_presente.camiverde    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 6.360      ;
+; -5.536  ; estado_presente.espera       ; estado_presente.inicial      ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 6.215      ;
+; -4.809  ; estado_presente.inicial      ; estado_presente.inicial      ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 5.488      ;
+; -4.803  ; estado_presente.espera       ; estado_presente.espera       ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 5.482      ;
+; -4.220  ; estado_presente.camiverde    ; estado_presente.camiverde    ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 4.899      ;
+; -3.113  ; estado_presente.camiamarillo ; estado_presente.espera       ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 3.792      ;
+; -2.739  ; estado_presente.inicial      ; estado_presente.carramarillo ; clk_1s       ; clk_1s      ; 1.000        ; 0.000      ; 3.418      ;
+; -0.694  ; sensor                       ; estado_presente.carramarillo ; sensor       ; clk_1s      ; 0.500        ; 4.985      ; 5.858      ;
+; -0.689  ; sensor                       ; estado_presente.inicial      ; sensor       ; clk_1s      ; 0.500        ; 4.985      ; 5.853      ;
+; -0.194  ; sensor                       ; estado_presente.carramarillo ; sensor       ; clk_1s      ; 1.000        ; 4.985      ; 5.858      ;
+; -0.189  ; sensor                       ; estado_presente.inicial      ; sensor       ; clk_1s      ; 1.000        ; 4.985      ; 5.853      ;
++---------+------------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'sensor'                                                                                                                  ;
++--------+------------------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; -1.651 ; estado_presente.inicial      ; reset_cuenta       ; clk_1s       ; sensor      ; 0.500        ; 13.881     ; 11.395     ;
+; -0.771 ; estado_presente.camiamarillo ; reset_cuenta       ; clk_1s       ; sensor      ; 0.500        ; 13.881     ; 10.515     ;
+; -0.687 ; estado_presente.camiamarillo ; carretera[2]$latch ; clk_1s       ; sensor      ; 0.500        ; 12.490     ; 8.399      ;
+; -0.487 ; estado_presente.inicial      ; rural[2]$latch     ; clk_1s       ; sensor      ; 0.500        ; 13.885     ; 10.579     ;
+; -0.142 ; estado_presente.carramarillo ; reset_cuenta       ; clk_1s       ; sensor      ; 0.500        ; 13.881     ; 9.886      ;
+; 0.023  ; estado_presente.carramarillo ; carretera[1]$latch ; clk_1s       ; sensor      ; 0.500        ; 12.521     ; 7.735      ;
+; 0.193  ; estado_presente.carramarillo ; rural[1]$latch     ; clk_1s       ; sensor      ; 0.500        ; 13.839     ; 9.638      ;
+; 0.707  ; estado_presente.camiamarillo ; rural[1]$latch     ; clk_1s       ; sensor      ; 0.500        ; 13.839     ; 9.124      ;
+; 0.727  ; estado_presente.espera       ; carretera[1]$latch ; clk_1s       ; sensor      ; 0.500        ; 12.521     ; 7.031      ;
+; 0.932  ; estado_presente.camiverde    ; carretera[2]$latch ; clk_1s       ; sensor      ; 0.500        ; 12.490     ; 6.780      ;
+; 1.013  ; fin_largo                    ; carretera[1]$latch ; clk_1s       ; sensor      ; 0.500        ; 12.521     ; 6.745      ;
+; 1.163  ; estado_presente.espera       ; rural[2]$latch     ; clk_1s       ; sensor      ; 0.500        ; 13.885     ; 8.929      ;
+; 2.082  ; estado_presente.espera       ; carretera[2]$latch ; clk_1s       ; sensor      ; 0.500        ; 12.490     ; 5.630      ;
+; 2.090  ; fin_largo                    ; carretera[2]$latch ; clk_1s       ; sensor      ; 0.500        ; 12.490     ; 5.622      ;
+; 3.531  ; estado_presente.inicial      ; carretera[0]$latch ; clk_1s       ; sensor      ; 0.500        ; 12.490     ; 4.855      ;
+; 4.937  ; estado_presente.camiverde    ; rural[0]$latch     ; clk_1s       ; sensor      ; 0.500        ; 13.781     ; 4.850      ;
++--------+------------------------------+--------------------+--------------+-------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'sensor'                                                                                                                   ;
++--------+------------------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node            ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+--------------------+--------------+-------------+--------------+------------+------------+
+; -8.431 ; estado_presente.camiverde    ; rural[0]$latch     ; clk_1s       ; sensor      ; -0.500       ; 13.781     ; 4.850      ;
+; -7.135 ; estado_presente.inicial      ; carretera[0]$latch ; clk_1s       ; sensor      ; -0.500       ; 12.490     ; 4.855      ;
+; -6.368 ; fin_largo                    ; carretera[2]$latch ; clk_1s       ; sensor      ; -0.500       ; 12.490     ; 5.622      ;
+; -6.360 ; estado_presente.espera       ; carretera[2]$latch ; clk_1s       ; sensor      ; -0.500       ; 12.490     ; 5.630      ;
+; -5.276 ; fin_largo                    ; carretera[1]$latch ; clk_1s       ; sensor      ; -0.500       ; 12.521     ; 6.745      ;
+; -5.210 ; estado_presente.camiverde    ; carretera[2]$latch ; clk_1s       ; sensor      ; -0.500       ; 12.490     ; 6.780      ;
+; -4.990 ; estado_presente.espera       ; carretera[1]$latch ; clk_1s       ; sensor      ; -0.500       ; 12.521     ; 7.031      ;
+; -4.456 ; estado_presente.espera       ; rural[2]$latch     ; clk_1s       ; sensor      ; -0.500       ; 13.885     ; 8.929      ;
+; -4.286 ; estado_presente.carramarillo ; carretera[1]$latch ; clk_1s       ; sensor      ; -0.500       ; 12.521     ; 7.735      ;
+; -4.215 ; estado_presente.camiamarillo ; rural[1]$latch     ; clk_1s       ; sensor      ; -0.500       ; 13.839     ; 9.124      ;
+; -3.701 ; estado_presente.carramarillo ; rural[1]$latch     ; clk_1s       ; sensor      ; -0.500       ; 13.839     ; 9.638      ;
+; -3.591 ; estado_presente.camiamarillo ; carretera[2]$latch ; clk_1s       ; sensor      ; -0.500       ; 12.490     ; 8.399      ;
+; -3.495 ; estado_presente.carramarillo ; reset_cuenta       ; clk_1s       ; sensor      ; -0.500       ; 13.881     ; 9.886      ;
+; -2.866 ; estado_presente.camiamarillo ; reset_cuenta       ; clk_1s       ; sensor      ; -0.500       ; 13.881     ; 10.515     ;
+; -2.806 ; estado_presente.inicial      ; rural[2]$latch     ; clk_1s       ; sensor      ; -0.500       ; 13.885     ; 10.579     ;
+; -1.986 ; estado_presente.inicial      ; reset_cuenta       ; clk_1s       ; sensor      ; -0.500       ; 13.881     ; 11.395     ;
++--------+------------------------------+--------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk_1s'                                                                                                                             ;
++--------+------------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                    ; To Node                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.829  ; sensor                       ; estado_presente.inicial      ; sensor       ; clk_1s      ; 0.000        ; 4.985      ; 5.853      ;
+; 0.834  ; sensor                       ; estado_presente.carramarillo ; sensor       ; clk_1s      ; 0.000        ; 4.985      ; 5.858      ;
+; 1.329  ; sensor                       ; estado_presente.inicial      ; sensor       ; clk_1s      ; -0.500       ; 4.985      ; 5.853      ;
+; 1.334  ; sensor                       ; estado_presente.carramarillo ; sensor       ; clk_1s      ; -0.500       ; 4.985      ; 5.858      ;
+; 3.379  ; estado_presente.inicial      ; estado_presente.carramarillo ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 3.418      ;
+; 3.753  ; estado_presente.camiamarillo ; estado_presente.espera       ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 3.792      ;
+; 4.860  ; estado_presente.camiverde    ; estado_presente.camiverde    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 4.899      ;
+; 5.443  ; estado_presente.espera       ; estado_presente.espera       ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 5.482      ;
+; 5.449  ; estado_presente.inicial      ; estado_presente.inicial      ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 5.488      ;
+; 6.176  ; estado_presente.espera       ; estado_presente.inicial      ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 6.215      ;
+; 6.321  ; estado_presente.carramarillo ; estado_presente.camiverde    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 6.360      ;
+; 6.779  ; fin_corto                    ; estado_presente.camiamarillo ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 6.818      ;
+; 6.783  ; fin_corto                    ; estado_presente.camiverde    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 6.822      ;
+; 7.336  ; \cuenta_tiempo:cuenta[2]     ; \cuenta_tiempo:cuenta[2]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 7.375      ;
+; 8.100  ; estado_presente.camiverde    ; estado_presente.camiamarillo ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 8.139      ;
+; 8.182  ; fin_largo                    ; estado_presente.inicial      ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 8.221      ;
+; 8.225  ; fin_largo                    ; estado_presente.espera       ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 8.264      ;
+; 8.895  ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[2]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 8.934      ;
+; 9.209  ; \cuenta_tiempo:cuenta[2]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 9.248      ;
+; 9.210  ; \cuenta_tiempo:cuenta[2]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 9.249      ;
+; 9.334  ; \cuenta_tiempo:cuenta[1]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 9.373      ;
+; 9.350  ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[0]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 9.389      ;
+; 9.544  ; \cuenta_tiempo:cuenta[0]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 9.583      ;
+; 9.765  ; \cuenta_tiempo:cuenta[1]     ; \cuenta_tiempo:cuenta[2]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 9.804      ;
+; 9.940  ; \cuenta_tiempo:cuenta[1]     ; \cuenta_tiempo:cuenta[1]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 9.979      ;
+; 10.150 ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[1]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 10.189     ;
+; 10.769 ; \cuenta_tiempo:cuenta[0]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 10.808     ;
+; 10.769 ; \cuenta_tiempo:cuenta[3]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 10.808     ;
+; 10.983 ; \cuenta_tiempo:cuenta[2]     ; \cuenta_tiempo:cuenta[3]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.022     ;
+; 11.004 ; \cuenta_tiempo:cuenta[3]     ; \cuenta_tiempo:cuenta[3]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.043     ;
+; 11.134 ; \cuenta_tiempo:cuenta[2]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.173     ;
+; 11.187 ; \cuenta_tiempo:cuenta[4]     ; fin_corto                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.226     ;
+; 11.188 ; \cuenta_tiempo:cuenta[4]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.227     ;
+; 11.281 ; \cuenta_tiempo:cuenta[1]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.320     ;
+; 11.318 ; \cuenta_tiempo:cuenta[3]     ; fin_largo                    ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.357     ;
+; 11.715 ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[3]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.754     ;
+; 11.852 ; \cuenta_tiempo:cuenta[4]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.891     ;
+; 11.866 ; \cuenta_tiempo:cuenta[0]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 11.905     ;
+; 11.982 ; \cuenta_tiempo:cuenta[3]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 12.021     ;
+; 12.585 ; \cuenta_tiempo:cuenta[1]     ; \cuenta_tiempo:cuenta[3]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 12.624     ;
+; 12.736 ; \cuenta_tiempo:cuenta[1]     ; \cuenta_tiempo:cuenta[4]     ; clk_1s       ; clk_1s      ; 0.000        ; 0.000      ; 12.775     ;
+; 15.480 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[1]     ; sensor       ; clk_1s      ; -0.500       ; -13.881    ; 1.138      ;
+; 18.600 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[4]     ; sensor       ; clk_1s      ; -0.500       ; -13.881    ; 4.258      ;
+; 18.601 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[3]     ; sensor       ; clk_1s      ; -0.500       ; -13.881    ; 4.259      ;
+; 18.651 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[2]     ; sensor       ; clk_1s      ; -0.500       ; -13.881    ; 4.309      ;
+; 18.652 ; reset_cuenta                 ; fin_corto                    ; sensor       ; clk_1s      ; -0.500       ; -13.881    ; 4.310      ;
+; 18.654 ; reset_cuenta                 ; \cuenta_tiempo:cuenta[0]     ; sensor       ; clk_1s      ; -0.500       ; -13.881    ; 4.312      ;
+; 20.441 ; reset_cuenta                 ; fin_largo                    ; sensor       ; clk_1s      ; -0.500       ; -13.881    ; 6.099      ;
++--------+------------------------------+------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'clk_1s'                                                                                      ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target                           ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; clk_1s ; Rise       ; clk_1s                           ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[0]         ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[0]         ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[1]         ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[1]         ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[2]         ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[2]         ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[3]         ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[3]         ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[4]         ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[4]         ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.camiamarillo     ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.camiamarillo     ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.camiverde        ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.camiverde        ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.carramarillo     ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.carramarillo     ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.espera           ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.espera           ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.inicial          ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.inicial          ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; fin_corto                        ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; fin_corto                        ;
+; 0.161  ; 0.500        ; 0.339          ; High Pulse Width ; clk_1s ; Rise       ; fin_largo                        ;
+; 0.161  ; 0.500        ; 0.339          ; Low Pulse Width  ; clk_1s ; Rise       ; fin_largo                        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[0]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[0]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[1]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[1]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[2]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[2]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[3]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[3]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[4]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; \cuenta_tiempo:cuenta[4]|clk     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; clk_1s|combout                   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; clk_1s|combout                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.camiamarillo|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.camiamarillo|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.camiverde|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.camiverde|clk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.carramarillo|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.carramarillo|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.espera|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.espera|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; estado_presente.inicial|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; estado_presente.inicial|clk      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; fin_corto|clk                    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; fin_corto|clk                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk_1s ; Rise       ; fin_largo|clk                    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk_1s ; Rise       ; fin_largo|clk                    ;
++--------+--------------+----------------+------------------+--------+------------+----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'sensor'                                                                              ;
++--------+--------------+----------------+------------------+--------+------------+--------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target                   ;
++--------+--------------+----------------+------------------+--------+------------+--------------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; sensor ; Rise       ; sensor                   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; Selector6~0|combout      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; Selector6~0|combout      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; Selector6~0|datac        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; Selector6~0|datac        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; Selector8~0|combout      ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; Selector8~0|combout      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; Selector8~0|dataa        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; Selector8~0|dataa        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Fall       ; carretera[0]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Fall       ; carretera[0]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; carretera[0]$latch|dataa ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; carretera[0]$latch|dataa ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Fall       ; carretera[1]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Fall       ; carretera[1]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; carretera[1]$latch|dataa ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; carretera[1]$latch|dataa ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Fall       ; carretera[2]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Fall       ; carretera[2]$latch       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; carretera[2]$latch|dataa ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; carretera[2]$latch|dataa ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Fall       ; reset_cuenta             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Fall       ; reset_cuenta             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; reset_cuenta|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; reset_cuenta|datad       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Fall       ; rural[0]$latch           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Fall       ; rural[0]$latch           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; rural[0]$latch|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; rural[0]$latch|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Fall       ; rural[1]$latch           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Fall       ; rural[1]$latch           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; rural[1]$latch|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; rural[1]$latch|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Fall       ; rural[2]$latch           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Fall       ; rural[2]$latch           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; rural[2]$latch|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; rural[2]$latch|datad     ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; sensor ; Rise       ; sensor|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; sensor ; Rise       ; sensor|combout           ;
++--------+--------------+----------------+------------------+--------+------------+--------------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; sensor    ; clk_1s     ; 1.194 ; 1.194 ; Rise       ; clk_1s          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; sensor    ; clk_1s     ; -0.829 ; -0.829 ; Rise       ; clk_1s          ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Clock to Output Times                                                       ;
++---------------+------------+--------+--------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+--------+------------+-----------------+
+; carretera[*]  ; sensor     ; 23.799 ; 23.799 ; Fall       ; sensor          ;
+;  carretera[0] ; sensor     ; 20.489 ; 20.489 ; Fall       ; sensor          ;
+;  carretera[1] ; sensor     ; 23.799 ; 23.799 ; Fall       ; sensor          ;
+;  carretera[2] ; sensor     ; 23.773 ; 23.773 ; Fall       ; sensor          ;
+; rural[*]      ; sensor     ; 25.803 ; 25.803 ; Fall       ; sensor          ;
+;  rural[0]     ; sensor     ; 25.064 ; 25.064 ; Fall       ; sensor          ;
+;  rural[1]     ; sensor     ; 25.302 ; 25.302 ; Fall       ; sensor          ;
+;  rural[2]     ; sensor     ; 25.803 ; 25.803 ; Fall       ; sensor          ;
++---------------+------------+--------+--------+------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                               ;
++---------------+------------+--------+--------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++---------------+------------+--------+--------+------------+-----------------+
+; carretera[*]  ; sensor     ; 20.489 ; 20.489 ; Fall       ; sensor          ;
+;  carretera[0] ; sensor     ; 20.489 ; 20.489 ; Fall       ; sensor          ;
+;  carretera[1] ; sensor     ; 23.799 ; 23.799 ; Fall       ; sensor          ;
+;  carretera[2] ; sensor     ; 23.773 ; 23.773 ; Fall       ; sensor          ;
+; rural[*]      ; sensor     ; 25.064 ; 25.064 ; Fall       ; sensor          ;
+;  rural[0]     ; sensor     ; 25.064 ; 25.064 ; Fall       ; sensor          ;
+;  rural[1]     ; sensor     ; 25.302 ; 25.302 ; Fall       ; sensor          ;
+;  rural[2]     ; sensor     ; 25.803 ; 25.803 ; Fall       ; sensor          ;
++---------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk_1s     ; clk_1s   ; 87       ; 0        ; 0        ; 0        ;
+; sensor     ; clk_1s   ; 2        ; 11       ; 0        ; 0        ;
+; clk_1s     ; sensor   ; 0        ; 0        ; 16       ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk_1s     ; clk_1s   ; 87       ; 0        ; 0        ; 0        ;
+; sensor     ; clk_1s   ; 2        ; 11       ; 0        ; 0        ;
+; clk_1s     ; sensor   ; 0        ; 0        ; 16       ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 5     ; 5    ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 6     ; 6    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri May 08 19:19:36 2020
+Info: Command: quartus_sta SEMAFORO -c SEMAFORO
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is -40 degrees C
+Info (21077): High junction temperature is 125 degrees C
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Warning (335093): TimeQuest Timing Analyzer is analyzing 7 combinational loops as latches.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'SEMAFORO.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clk_1s clk_1s
+    Info (332105): create_clock -period 1.000 -name sensor sensor
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -21.045
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):   -21.045      -158.398 clk_1s 
+    Info (332119):    -1.651        -2.825 sensor 
+Info (332146): Worst-case hold slack is -8.431
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -8.431       -39.376 sensor 
+    Info (332119):     0.829         0.000 clk_1s 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.289        -2.289 clk_1s 
+    Info (332119):    -2.289        -2.289 sensor 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4517 megabytes
+    Info: Processing ended: Fri May 08 19:19:38 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

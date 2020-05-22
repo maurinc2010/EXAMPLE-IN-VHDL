@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\DECI\Documents\example vhdl\EXAMPLE-IN-VHDL\TECLADO\simulation\qsim
+vTECLADO
+Z1 !s100 A^Fka0KNh^]^=@ma17glh1
+Z2 I_<fMRJE=2QHJD=mEIJPX70
+Z3 V;IK<Fi<]3FJ]Z_Yj?7JVZ0
+Z4 dC:\Users\DECI\Documents\example vhdl\EXAMPLE-IN-VHDL\TECLADO\simulation\qsim
+Z5 w1589029890
+Z6 8TECLADO.vo
+Z7 FTECLADO.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|TECLADO.vo|
+Z10 o-work work -O0
+Z11 n@t@e@c@l@a@d@o
+!i10b 1
+!s85 0
+Z12 !s108 1589029891.015000
+Z13 !s107 TECLADO.vo|
+!s101 -O0
+vTECLADO_vlg_check_tst
+!i10b 1
+Z14 !s100 6@7:XWWU>2X44ka^NI[T;2
+Z15 I?PT@H[G@MlR63IRzYe:742
+Z16 VKebH6U^Z_n1@I=cDGc6ZO2
+R4
+Z17 w1589029889
+Z18 8TECLADO.vt
+Z19 FTECLADO.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1589029891.143000
+Z21 !s107 TECLADO.vt|
+Z22 !s90 -work|work|TECLADO.vt|
+!s101 -O0
+R10
+Z23 n@t@e@c@l@a@d@o_vlg_check_tst
+vTECLADO_vlg_sample_tst
+!i10b 1
+Z24 !s100 gR9SGWo^h:DH@T;2DYj3b1
+Z25 ImF>Vn302;Q0I4oYBlXKPK3
+Z26 V4oIo2@OdlE93>2kIU_XHC0
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@t@e@c@l@a@d@o_vlg_sample_tst
+vTECLADO_vlg_vec_tst
+!i10b 1
+Z28 !s100 Cg@69f?Zc^NH0RXEUcHe@2
+Z29 I7Sm9XdcQeMTabTTZ0fk0T2
+Z30 V]z6i0bDS;2bll0Q^Z=QkS2
+R4
+R17
+R18
+R19
+Z31 L0 403
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@t@e@c@l@a@d@o_vlg_vec_tst

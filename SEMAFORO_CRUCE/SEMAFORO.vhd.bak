@@ -1,0 +1,12 @@
+library ieee;
+use std_logic_1164.all;
+
+entity SEMAFORO is
+	port (
+			sensor			  : in  std_logic;
+			clk_1s			  : in  std_logic;
+			reset            : in  std_logic;
+			rural, carretera : out std_logic_vector(2 downto 0)
+	);
+end entity;
+	

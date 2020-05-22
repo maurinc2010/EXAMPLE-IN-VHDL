@@ -1,0 +1,34 @@
+|TECLADO
+clk_250m => estado_presente.IN1
+inp[0] => Equal0.IN7
+inp[0] => Equal1.IN7
+inp[0] => Equal2.IN7
+inp[0] => Equal3.IN7
+inp[1] => Equal0.IN6
+inp[1] => Equal1.IN6
+inp[1] => Equal2.IN6
+inp[1] => Equal3.IN6
+inp[2] => Equal0.IN5
+inp[2] => Equal1.IN5
+inp[2] => Equal2.IN5
+inp[2] => Equal3.IN5
+inp[3] => Equal0.IN4
+inp[3] => Equal1.IN4
+inp[3] => Equal2.IN4
+inp[3] => Equal3.IN4
+outp[0] <= outp.DB_MAX_OUTPUT_PORT_TYPE
+outp[1] <= outp.DB_MAX_OUTPUT_PORT_TYPE
+outp[2] <= outp.DB_MAX_OUTPUT_PORT_TYPE
+data[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+new_data[0] <= new_data.DB_MAX_OUTPUT_PORT_TYPE
+new_data[1] <= new_data.DB_MAX_OUTPUT_PORT_TYPE
+new_data[2] <= new_data.DB_MAX_OUTPUT_PORT_TYPE
+new_data[3] <= new_data.DB_MAX_OUTPUT_PORT_TYPE
+
+

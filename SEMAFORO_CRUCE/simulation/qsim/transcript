@@ -1,0 +1,27 @@
+# do SEMAFORO.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SEMAFORO
+# 
+# Top level modules:
+# 	SEMAFORO
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SEMAFORO_vlg_sample_tst
+# -- Compiling module SEMAFORO_vlg_check_tst
+# -- Compiling module SEMAFORO_vlg_vec_tst
+# 
+# Top level modules:
+# 	SEMAFORO_vlg_vec_tst
+# vsim -L maxv_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -t 1ps -novopt work.SEMAFORO_vlg_vec_tst 
+# Loading work.SEMAFORO_vlg_vec_tst
+# Loading work.SEMAFORO
+# Loading maxv_ver.maxv_io
+# Loading maxv_ver.maxv_lcell
+# Loading maxv_ver.maxv_asynch_lcell
+# Loading maxv_ver.maxv_lcell_register
+# Loading work.SEMAFORO_vlg_sample_tst
+# Loading work.SEMAFORO_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : SEMAFORO.vt(249)
+#    Time: 1 us  Iteration: 0  Instance: /SEMAFORO_vlg_vec_tst/tb_out

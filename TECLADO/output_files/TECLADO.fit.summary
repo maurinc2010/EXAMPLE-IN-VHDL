@@ -1,0 +1,9 @@
+Fitter Status : Successful - Sat May 09 08:10:47 2020
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : TECLADO
+Top-level Entity Name : TECLADO
+Family : MAX3000A
+Device : EPM3512AQI208-10
+Timing Models : Final
+Total macrocells : 16 / 512 ( 3 % )
+Total pins : 23 / 172 ( 13 % )

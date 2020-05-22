@@ -1,0 +1,6 @@
+
+State Machine - |pusador|estado_actual
+Name estado_actual.Q1 estado_actual.ONN estado_actual.OFF 
+estado_actual.OFF 0 0 0 
+estado_actual.ONN 0 1 1 
+estado_actual.Q1 1 0 1 

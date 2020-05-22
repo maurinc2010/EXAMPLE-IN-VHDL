@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\DECI\Documents\example vhdl\EXAMPLE-IN-VHDL\SEMAFORO_CRUCE\simulation\qsim
+vSEMAFORO
+Z1 !s100 ]V0GFHBlk2jk8:9_]WX0]3
+Z2 IL=4_kj8e8biPRX^Jd:?^?1
+Z3 VUzMW4la=ICd_5GdGR1`561
+Z4 dC:\Users\DECI\Documents\example vhdl\EXAMPLE-IN-VHDL\SEMAFORO_CRUCE\simulation\qsim
+Z5 w1588981392
+Z6 8SEMAFORO.vo
+Z7 FSEMAFORO.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|SEMAFORO.vo|
+Z10 o-work work -O0
+Z11 n@s@e@m@a@f@o@r@o
+!i10b 1
+!s85 0
+Z12 !s108 1588981393.657000
+Z13 !s107 SEMAFORO.vo|
+!s101 -O0
+vSEMAFORO_vlg_check_tst
+!i10b 1
+Z14 !s100 jQSF7YMWc]JTZ@<m@[gLM2
+Z15 I4HJD7KNKlbXJW=?8Z<KME3
+Z16 Voe@@F:IM0k^0zfQ=Li>nH0
+R4
+Z17 w1588981391
+Z18 8SEMAFORO.vt
+Z19 FSEMAFORO.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z20 !s108 1588981393.802000
+Z21 !s107 SEMAFORO.vt|
+Z22 !s90 -work|work|SEMAFORO.vt|
+!s101 -O0
+R10
+Z23 n@s@e@m@a@f@o@r@o_vlg_check_tst
+vSEMAFORO_vlg_sample_tst
+!i10b 1
+Z24 !s100 ZCF^<:GFG:]KJOhAkzD5i3
+Z25 ID;Gbb<D3:lDd9XHD2_LJ83
+Z26 V;;`LLX2@OQI8>hofC@]jK1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@s@e@m@a@f@o@r@o_vlg_sample_tst
+vSEMAFORO_vlg_vec_tst
+!i10b 1
+Z28 !s100 IdGGfP60oEPQgJhQaEEld2
+Z29 IB]i0:@:PMDVi5TOLzW6553
+Z30 VW6MmZafZMhj:c48D?TD7X0
+R4
+R17
+R18
+R19
+Z31 L0 253
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@s@e@m@a@f@o@r@o_vlg_vec_tst
